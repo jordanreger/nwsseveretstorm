@@ -1,0 +1,16 @@
+[package]
+name = "nwsseveretstorm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+futures = "0.3"
+dotenv_codegen = "0.15.0"
+chrono = { version = "0.4.26", features = ["serde"] }
+openssl = { version = "0.10", features = ["vendored"] }
